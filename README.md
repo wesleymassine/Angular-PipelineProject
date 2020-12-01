@@ -1,6 +1,8 @@
 # PipelineProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+É um projeto simples que possui autenticação com usário: adm e senha: 12345 e um componente para realizar soma de dois números interios 
+
 
 ## Development server
 
