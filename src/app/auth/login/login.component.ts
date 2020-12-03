@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { LoginModel } from 'src/app/models/loginModel';
+import { AuthService } from '../auth.service';
 
 @Component({
     selector: 'app-login',
@@ -6,7 +9,17 @@ import { Component } from '@angular/core';
     styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-    constructor() {
 
+    // Model
+    public login: LoginModel;
+
+    constructor(public authService: AuthService, private router: Router) {
+        this.login = new LoginModel();
+    }
+
+    public Logar() {
+        if (this.authService.login(this.login.usuario, this.login.senha)) {
+            this.router.navigate([this.authService.redirectUrl]);
+        }
     }
 }

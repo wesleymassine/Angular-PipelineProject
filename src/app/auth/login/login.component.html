@@ -1,14 +1,12 @@
-<form>
-    <h1>Realize seu login para continuar</h1>
-    <div>
-        <label>Usuário</label>
-        <input type="text">
-    </div>
-    <div>
-        <label>Senha</label>
-        <input type="password">
-    </div>
-    <div>
-        <input type="submit" value="Logar">
-    </div>
-</form>
+<h1>Realize seu login para continuar</h1>
+<div>
+    <label>Usuário</label>
+    <input type="text" [(ngModel)]="login.usuario">
+</div>
+<div>
+    <label>Senha</label>
+    <input type="password" [(ngModel)]="login.senha">
+</div>
+<div>
+    <input type="submit" value="Logar" (click)="Logar()">
+</div>

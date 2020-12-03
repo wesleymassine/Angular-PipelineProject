@@ -5,13 +5,15 @@ export class AuthService {
     isLoggedIn = false;
 
     // Url padrão para direcionamento após o login
-    redirectUrl: string;
+    redirectUrl = '';
 
-    login(): Observable<boolean> {
-        return of(true).pipe(
-            delay(1000),
-            tap(val => this.isLoggedIn = true)
-        );
+    login(usuario: string, senha: string): boolean {
+        if (usuario === 'adm' && senha === 'impacta') {
+            this.isLoggedIn = true;
+            return true;
+        }
+
+        return false;
     }
 
     logout(): void {

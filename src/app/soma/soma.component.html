@@ -1,1 +1,11 @@
+<button (click)="logout()">Sair</button>
 <h1>Bora somar!!</h1>
+<div>
+    <label >Primeiro número</label>
+    <input [(ngModel)]="numero1" type="text">
+    +
+    <label>Primeiro Segundo número</label>
+    <input [(ngModel)]="numero2" type="text">
+    <button (click)="somar(numero1, numero2)">Somar</button>
+    <label *ngIf="resultado">Resultado {{resultado}}</label>
+</div>
