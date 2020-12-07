@@ -16,8 +16,8 @@ export class SomaComponent {
     constructor(private authService: AuthService, private router: Router) {
     }
 
-    public somar(numero1, numero2) {
-        this.resultado = numero1 + numero2;
+    public somar(numero1: number, numero2: number) {
+        this.resultado = <number>numero1 + <number>numero2;
     }
 
     public logout(): void {
