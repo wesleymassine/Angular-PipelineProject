@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 echo 'Builds your Angular application'
 ng build
 
