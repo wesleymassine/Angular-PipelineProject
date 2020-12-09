@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth/auth.service';
+import { SomaService } from './somaService';
 
 @Component({
     selector: 'app-soma',
@@ -16,8 +17,8 @@ export class SomaComponent {
     constructor(private authService: AuthService, private router: Router) {
     }
 
-    public somar(numero1: number, numero2: number) {
-        this.resultado = <number>numero1 + <number>numero2;
+    public somar() {
+        this.resultado = SomaService.somar(this.numero1, this.numero2);
     }
 
     public logout(): void {

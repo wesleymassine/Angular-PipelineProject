@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 87.0.4280 (Windows 10.0.0)" package="" timestamp="2020-12-09T00:32:02" id="0" hostname="NOTE-BELO" tests="1" errors="0" failures="0" time="0.007">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"/>
+  </properties>
+  <testcase name="Teste de soma Soma sem arredondamentos" time="0.007" classname="Chrome_87_0_4280_(Windows_10_0_0).Teste de soma"/>
+  <system-out>
+    <![CDATA[Chrome 87.0.4280 (Windows 10.0.0) LOG: 24.776773
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
