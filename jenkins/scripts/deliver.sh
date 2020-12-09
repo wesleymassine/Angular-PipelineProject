@@ -12,7 +12,7 @@ echo 'Run your Angular application'
 # sleep 1
 # echo $! > .pidfile
 # set +x
-npm run-scrip serve
+npm run-scrip start
 
 echo 'Now...'
 echo 'Visit http://159.89.92.227:4200 to see your application in action.'
