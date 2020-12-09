@@ -8,7 +8,7 @@ export class AuthService {
     redirectUrl = '';
 
     login(usuario: string, senha: string): boolean {
-        if (usuario === NaN && senha === 'impacta') {
+        if (usuario === 'adm' && senha === 'impacta') {
             this.isLoggedIn = true;
             return true;
         }

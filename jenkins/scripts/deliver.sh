@@ -2,7 +2,7 @@
 
 echo 'Builds your Angular application'
 #set -x
-ng build
+npm run-scrip build
 #set +x
 
 echo 'Run your Angular application'
